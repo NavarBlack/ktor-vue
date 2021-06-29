@@ -1,0 +1,43 @@
+=_1400vw
+  @media (max-width: 1400px)
+    @content
+
+=_1200vw
+  @media (max-width: 1200px)
+    @content
+
+=_980vw
+  @media (max-width: 980px)
+    @content
+
+=_768vw
+  @media (max-width: 768px)
+    @content
+
+=_768vw_1000vh
+  @media (max-width: 768px) and (min-height: 1024px)
+    @content
+
+=_375vw_or_800vh
+  @media (max-width: 375px), (max-height: 800px)
+    @content
+
+=_550vw
+  @media (max-width: 550px)
+    @content
+
+=_750vh
+  @media (max-height: 750px)
+    @content
+
+=hover_shadow
+  transition: transform .3s, box-shadow .3s
+  &:hover
+    @media (hover: hover)
+      transform: translateY(-3px)
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+
+=bg_image($utl)
+  background-image: url($utl)
+  background-position: 50% 50%
+  background-size: cover

@@ -12,10 +12,14 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@assets/css/common.css'],
+  css: [    '@assets/css/common.css',
+    '@assets/sass/common.sass',
+    '@assets/sass/classes.sass',
+    '@assets/sass/fonts.sass',
+    '@assets/sass/vue.animations.sass'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/lodash.js',],
+  plugins: ['@/plugins/lodash.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -32,7 +36,7 @@ export default {
     '@nuxtjs/style-resources',
   ],
   styleResources: {
-    sass: ['./assets/sass/*.sass'],
+    sass: ['@assets/sass/mixins.sass', '@assets/sass/variables.sass'],
   },
 
   axios: {

@@ -1,21 +1,25 @@
 <template>
   <section>
     <div class='layout layout_section'>
-      <h6>новости культуры</h6>
-      <h2>Джаз сегодня:</h2>
-      <div class='dash'></div>
-      <p >Великий вид искусства должен привлекать внимание всех уголков культуры. Исключение половины населения без уважительной причины подавит половину творчества в литературе, живописи или музыке, не так ли? Но в джазе нет
-        был особенно гостеприимным для половины населения на протяжении большей части своей истории, поскольку события 2017 года начали проявляться. Женщины говорят (снова) о том, каким образом они были исключены, подвергались насилию,
+      <section_header text1='Новости культуры' text2='Джаз сегодня'/>
+      <p>Великий вид искусства должен привлекать внимание всех уголков культуры. Исключение половины населения без уважительной причины подавит половину творчества в литературе,
+        живописи или музыке, не так ли? Но в джазе нет
+        был особенно гостеприимным для половины населения на протяжении большей части своей истории, поскольку события 2017 года начали проявляться. Женщины говорят (снова) о том,
+        каким образом они были исключены, подвергались насилию,
         или разочарованы. Исторические истории таких выдающихся музыкантов, как Мельба Листон</p>
-      <a href="#" target="_blank">прочитайте больше</a>
+      <external_link url='#' />
     </div>
   </section>
 
 </template>
 
 <script>
+import External_link from '~/components/smoll_component/external_link'
+import Section_header from '~/components/smoll_component/section_header'
+
 export default {
-  name: 'section_now'
+  name: 'section_now',
+  components: { Section_header, External_link }
 }
 </script>
 
@@ -36,23 +40,6 @@ section
   height: 776px
   background-color: #000000
 
-h6
-  font-size: 1.125rem
-  line-height: 1.2
-  text-transform: uppercase
-  font-weight: 700
-  text-align: center
-  word-wrap: break-word
-  color: white
-  margin-bottom: 20px
-h2
-  text-align: center
-  word-wrap: break-word
-  color: #94794e
-  font-size: 3rem
-  line-height: 1.1
-  letter-spacing: 1px
-  font-weight: 700
 
 p
   font-size: 1.25rem

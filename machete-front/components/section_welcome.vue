@@ -16,17 +16,17 @@
     <div>
       <p class='p_section'>live box set - увлекательная музыкальная битва титанов. Буквально назревал шторм, когда Майлз Дэвис выступил с парой замечательных концертов в Сан-Диего в ту же ночь на Humphreys Concerts by the Bay в апреле 1985 года.</p>
     </div>
-    <div>
-      <a href="#"  target="_blank">прочитайте больше</a>
-    </div>
+    <external_link url='#'/>
 
   </div>
   </section>
 </template>
 
 <script>
+import External_link from '~/components/smoll_component/external_link'
 export default {
-  name: 'section_welcome'
+  name: 'section_welcome',
+  components: { External_link }
 }
 </script>
 
@@ -38,20 +38,7 @@ h1
   word-wrap: break-word
   font-size: 4rem
   width: 10em
-a
-  width: 17em
-  border: solid 2px #94794e
-  box-sizing: border-box
-  display: block
-  cursor: pointer
-  text-decoration: none
-  text-align: center
-  padding: 10px 30px
-  text-transform: uppercase
-  font-size: 1rem
-  letter-spacing: 1px
-  font-weight: 700
-  color: white
+
 
 section
   width: 100%

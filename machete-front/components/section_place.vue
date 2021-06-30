@@ -1,10 +1,9 @@
 <template>
   <section>
     <div class='layout layout_section'>
-      <div>
-        <div class='place_img__top'>
-          <div class='place_img__top__border' />
-        </div>
+      <div style='position: relative'>
+        <div class='place_img__top' />
+        <div class='place_img__top__border' />
       </div>
 
       <div class='place_bottom'>
@@ -21,7 +20,7 @@
             <br> Послушайте музыку оркестра Анбессы, израильских музыкантов, живущих в Бруклине (а теперь и в Лос-Анджелесе), которые являются поклонниками «золотого века» эфиопской музыки. Из их последней записи Negestat, что означает
             Короли на амхарском языке, слушайте заглавный трек, насыщенный эфиопским грувом. <br>
             <br></p>
-          <a href="#"  target="_blank">прочитайте больше</a>
+          <external_link url='#'/>
         </div>
 
       </div>
@@ -30,20 +29,15 @@
 </template>
 
 <script>
+import External_link from '~/components/smoll_component/external_link'
 export default {
-  name: 'section_place'
+  name: 'section_place',
+  components: { External_link }
 }
 </script>
 
 <style lang='sass' scoped>
-h3
-  text-align: left
-  font-size: 1.875rem
-  line-height: 1.2
-  text-transform: uppercase
-  font-weight: 700
-  word-wrap: break-word
-  color: #94794e
+
 p
   font-size: 1rem
   color: #ffffff

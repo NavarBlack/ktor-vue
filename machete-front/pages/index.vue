@@ -11,6 +11,11 @@
   </section>
 </template>
 
+
+
+
+
+
 <script>
 import Section_welcome from '~/components/section_welcome'
 import Section_now from '~/components/section_now'
